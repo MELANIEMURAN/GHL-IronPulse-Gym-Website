@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IRONPULSE - Testimonials</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&amp;family=Oswald:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#bab8b7",
+                    "surface-dim": "#131313",
+                    "on-tertiary-container": "#2b2d2d",
+                    "on-primary-container": "#531a00",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "on-primary-fixed-variant": "#7f2b00",
+                    "primary-fixed-dim": "#ffb599",
+                    "error": "#ffb4ab",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "primary-fixed": "#ffdbce",
+                    "on-error": "#690005",
+                    "secondary-container": "#4a4949",
+                    "background": "#131313",
+                    "tertiary": "#c6c6c7",
+                    "surface-container": "#1f2020",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-container-high": "#2a2a2a",
+                    "outline": "#ab8a7d",
+                    "primary": "#ffb599",
+                    "on-secondary": "#313030",
+                    "surface-variant": "#353535",
+                    "on-secondary-fixed-variant": "#474646",
+                    "tertiary-container": "#939494",
+                    "inverse-on-surface": "#303030",
+                    "on-surface-variant": "#e4bfb1",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-primary": "#5a1c00",
+                    "inverse-primary": "#a63b00",
+                    "surface-tint": "#ffb599",
+                    "outline-variant": "#5b4137",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "primary-container": "#ff5f00",
+                    "secondary": "#c8c6c5",
+                    "tertiary-fixed": "#e2e2e2",
+                    "surface-container-low": "#1b1c1c",
+                    "on-background": "#e4e2e1",
+                    "surface-bright": "#393939",
+                    "on-tertiary": "#2f3131",
+                    "inverse-surface": "#e4e2e1",
+                    "on-primary-fixed": "#370e00",
+                    "error-container": "#93000a",
+                    "surface": "#131313",
+                    "on-surface": "#e4e2e1",
+                    "surface-container-highest": "#353535",
+                    "secondary-fixed": "#e5e2e1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-mobile": "20px",
+                    "gutter": "16px",
+                    "margin-desktop": "64px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "label-sm": [
+                            "Hanken Grotesk"
+                    ],
+                    "headline-lg": [
+                            "Oswald"
+                    ],
+                    "headline-lg-mobile": [
+                            "Oswald"
+                    ],
+                    "body-md": [
+                            "Hanken Grotesk"
+                    ],
+                    "body-lg": [
+                            "Hanken Grotesk"
+                    ],
+                    "headline-md": [
+                            "Oswald"
+                    ],
+                    "display-lg": [
+                            "Oswald"
+                    ],
+                    "label-bold": [
+                            "Hanken Grotesk"
+                    ]
+            },
+            "fontSize": {
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "1",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.5",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "display-lg": [
+                            "72px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-bold": [
+                            "14px",
+                            {
+                                    "lineHeight": "1",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .shear-btn {
+            clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+        }
+        .text-shadow-strong {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased font-body-md selection:bg-primary-container selection:text-white">
+<!-- Shared Component: TopNavBar -->
+<nav class="fixed w-full top-0 z-50 bg-background/95 dark:bg-background/95 backdrop-blur-sm border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-display-lg text-headline-md font-bold text-primary italic dark:text-primary tracking-tighter" href="#">IRONPULSE</a>
+<div class="hidden md:flex items-center gap-gutter font-headline-md text-headline-md uppercase tracking-tighter">
+<a class="text-on-background font-medium hover:text-primary transition-colors" href="#">Programs</a>
+<a class="text-on-background font-medium hover:text-primary transition-colors" href="#">Coaches</a>
+<a class="text-on-background font-medium hover:text-primary transition-colors" href="#">Membership</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Testimonials</a>
+</div>
+<button class="hidden md:inline-flex items-center justify-center bg-primary-container text-black font-label-bold text-label-bold uppercase px-6 py-3 shear-btn hover:scale-95 duration-200 ease-in-out transition-transform">
+                JOIN NOW
+            </button>
+<!-- Mobile Menu Trigger (Simplified for visual) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-[80px]">
+<!-- Hero Section -->
+<section class="relative w-full min-h-[614px] flex items-center justify-center overflow-hidden border-b border-outline-variant/20">
+<div class="absolute inset-0 bg-surface-container-lowest z-0">
+<img class="w-full h-full object-cover opacity-40 mix-blend-luminosity grayscale" data-alt="A gritty, cinematic shot of a determined athlete in a dark, industrial gym setting, heavily sweating after a grueling workout. Dramatic overhead lighting casts deep shadows, highlighting muscle definition and sheer exhaustion. The color palette is dominated by deep blacks, dark charcoal grays, and stark white highlights, evoking a high-intensity, uncompromising fitness atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLBsSDTr4H7YsKjFpxYjc3w385aSeNTeoD0eD8ViE6IaK90ME6vgN1J5Tiq955VFhRJWSjyZ7zvljvvqXrouthVVzQ4hL3KggrSVL2D7Cg813whjbTp59g_Z1yYGJGpKZFj3KTiu91vFPHjZMi9vQZBEsJA8FXlOWCtswsWm0IFnwNCClE97OyRYi4PNQMVKTXYn5bFdWJm6ZIuuP9NRiVT5aAyQB4ROayY0VPnrWJaOCMhXlj5Q3vEA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col items-center">
+<span class="font-label-bold text-label-bold text-primary tracking-widest uppercase mb-4 block">Uncompromising Discipline</span>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-white uppercase text-shadow-strong mb-6 leading-none">REAL RESULTS</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    Transformation requires sacrifice. These are the stories of those who embraced the grind, shattered their limits, and forged themselves anew in the fires of IRONPULSE.
+                </p>
+</div>
+</section>
+<!-- Success Stories Gallery (Bento Grid Style) -->
+<section class="py-margin-desktop px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white uppercase mb-12 border-l-4 border-primary pl-4 tracking-tighter">SUCCESS STORIES</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-unit md:gap-gutter">
+<!-- Card 1: Large -->
+<div class="md:col-span-2 relative group overflow-hidden bg-surface-container border border-outline-variant/30 min-h-[400px]">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity duration-500 grayscale group-hover:grayscale-0" data-alt="Before and after split image of a man undergoing a dramatic physical transformation. On the left, he is out of shape in a dimly lit setting. On the right, he is standing confidently in a professional gym, revealing significant muscle gain and fat loss under harsh, dramatic lighting. High contrast black and white with an intense, gritty aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiMAmKOLmetAI7G-i9pE0AJzHAQvFER-NQb4Ls7MvCQZUEbnCVf4cvdJPE9AEMPwpZAlkdEx04Pzm53BRMAsBaWbnoibYkiJJM6WwAocdF648nRaoFZwwNobu7Q1PwkftYn-zeBtafyva_9q0_IfQt6oD5RB6ap2LSqMJjJ6eRG49FnGXEl17sG3ZiSrEqzQ8k6aslnrXKggUsROIgj35FUfPXQ3_UjRINp4KmsYQL1giKlvRcrQjSCw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/50 to-transparent"></div>
+<div class="relative z-10 h-full flex flex-col justify-end p-8">
+<div class="flex gap-2 mb-4">
+<span class="bg-surface-container-high px-3 py-1 font-label-bold text-label-sm text-white uppercase tracking-wider">HIIT Inferno</span>
+<span class="bg-surface-container-high px-3 py-1 font-label-bold text-label-sm text-white uppercase tracking-wider">-40 lbs</span>
+</div>
+<blockquote class="font-headline-md text-headline-md text-white mb-4 italic">"I thought I knew what hard work was. IronPulse redefined it. The coaches pushed me past breaking points I didn't know I had."</blockquote>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-variant border border-outline/50 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up portrait of a tough, sweating man staring intensely into the camera. Dark, moody lighting, professional gym environment background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkAIlZ4DWFKzlrF6dTPM2VT03QPyHBpFuInHVjruz2E4GBdMA_xUJx0aMVD1b1rQqoSHFcRgO8AnrFp3R6Hx0BpMamQpUtzhvTvF4nysvFeIf4_C9u2I1ORFUYcv5b7044cI9Hcp77DjeafYpIiR4oT1FFcklcwJbA4eAuUvmgTAIhZJ34FzhiOv434dlxhY4OdvoUQ1jjQbqFXFRmwMEsU84MC1_t0aC5-FNRQ_RqVkc3bUu8_IDZfA"/>
+</div>
+<div>
+<h3 class="font-label-bold text-label-bold text-primary uppercase">Marcus Vance</h3>
+<p class="font-body-md text-label-sm text-on-surface-variant">Member since 2022</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: Small -->
+<div class="relative group overflow-hidden bg-surface-container border border-outline-variant/30 min-h-[400px]">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity duration-500 grayscale group-hover:grayscale-0" data-alt="A powerful female athlete performing a heavy deadlift in a rugged, dark gym setting. Chalk dust in the air, intense focus on her face. Cinematic lighting highlighting her back musculature. High contrast, gritty style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0e82JHtnGXTTpsM3lvTaLGfnfMA_xNAk_J_ns3MOzocRKSJNEOwSXZOHtriV5C4ttUmFM_Lo5J57BvnEYzjlf9o3EU5-s1RRIm0bdbMK9t0BsnJ0ccv53uU6ZsP4ypiGk4Ih1k5t6_ECpk-DEwjQZdB81gHTCMVk3PmfkeD_EB-0brjxg03uN-o8AVfR_hdS_pIEApjhI30yJlPSy9qYd5NqwxDDPEbsPADdGNQQRGb9B8OldGf36zg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-surface-container-lowest/20"></div>
+<div class="relative z-10 h-full flex flex-col justify-end p-6">
+<div class="mb-4">
+<span class="bg-surface-container-high px-3 py-1 font-label-bold text-label-sm text-white uppercase tracking-wider inline-block mb-2">Olympic Lifting</span>
+</div>
+<blockquote class="font-body-lg text-body-lg text-white mb-4 italic">"From struggling with the bar to joining the 300lb club. The programming here is unmatched."</blockquote>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-surface-variant border border-outline/50 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a fierce female weightlifter, sweating, looking directly at the camera with a determined expression. Dark studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpCdCRxLQRuL1zcdhIIUdwu-NmXOQfRbdtsQ3RwYGgcb4ABStEs9xOcFUDOx-Dh0HsBFWrfvBqfq6Vm3HWAu_bjHqr315wls-ivn5ym_6C_gd7KiLiHFdvXvG5aoJeNk3xcsp3F2CciIinxSRSFNlDhQ745GK_SeDl_P6x4UgtmaozuQWs6Jow2zWEQSOa7oZ0qGDms8X-tll8tvXWLJPoJ5kWjoLdudbi0fFVw5MjzL7EPDRlmrbjQw"/>
+</div>
+<div>
+<h3 class="font-label-bold text-label-bold text-primary uppercase">Elena Rostova</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Testimonials -->
+<section class="py-margin-desktop bg-surface-container-lowest border-y border-outline-variant/20">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white uppercase border-l-4 border-primary pl-4 tracking-tighter">THE IRONPULSE JOURNEY</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xl">Hear directly from the athletes who breathe our culture every day.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Video Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-video bg-surface-container border border-outline-variant/30 overflow-hidden mb-4">
+<img class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity grayscale group-hover:grayscale-0" data-alt="Thumbnail for a fitness documentary video showing a muscular man doing a kettlebell swing. The environment is a dark, underground style gym with harsh spotlighting. High contrast, gritty texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVuX8rXK6BwE_j3DifSNVsVym1niuVW_6HCw6ihm7OEezmuZop1437NGQRd6zdxFIPm2C94YyB89Wp6ufBsloBplQXG1tEFk3iBhTeWVfdinrQoXJoSan3a2o9DiOCSxvHO1WSX5LW9mHdbKckQRmR3-Er1fa1XG1hWVWVGpJG2vMh5B6bEz9cnGC3wq3Drh3skugELVhTcU3nZjmfwRKFfr5t7NV6q4PnC4eb63lwbx1x57h2IQoq6g"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(255,95,0,0.3)] group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-black" style="font-size: 32px; font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-white uppercase tracking-tight group-hover:text-primary transition-colors">Rebuilding from Injury</h3>
+<p class="font-body-md text-label-sm text-on-surface-variant mt-1">David's comeback story.</p>
+</div>
+<!-- Video Card 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-video bg-surface-container border border-outline-variant/30 overflow-hidden mb-4">
+<img class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity grayscale group-hover:grayscale-0" data-alt="Thumbnail for a fitness video showing a group of people in a tough bootcamp class, looking exhausted but determined. Dark gym setting, sweaty, high intensity atmosphere. Cinematic lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPyCGIp3pQCXO2Em9qQMCv5oVTjDo7T93aZOePIi1JKHtOE6k6AW2bECFK8VB95BRBDWQqRNroj1yDIy8b0z2aOLIRSxAFUww7WBCL1_cmiTusQ55DI4-a1vZiMhpoByB6gdShI_5TDVmLBpP-1VhnLbOKre6kLEn2tYqsModrzwlGIh8jU_slS2DXjAd6uPGFPCU4pMqYS-1v_mIpftqFyhqXRScxPfP2KEMbgGkwfua71mTGHMRJuA"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(255,95,0,0.3)] group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-black" style="font-size: 32px; font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-white uppercase tracking-tight group-hover:text-primary transition-colors">The 5AM Club</h3>
+<p class="font-body-md text-label-sm text-on-surface-variant mt-1">Culture and discipline.</p>
+</div>
+<!-- Video Card 3 (Hidden on mobile for symmetry if needed, or shown) -->
+<div class="group cursor-pointer hidden lg:block">
+<div class="relative aspect-video bg-surface-container border border-outline-variant/30 overflow-hidden mb-4">
+<img class="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity grayscale group-hover:grayscale-0" data-alt="Thumbnail for a fitness video showing a close up of chalky hands gripping a heavy barbell. Dark background, intense focus on the texture of the knurling and chalk. High contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWrlcH7rN9pnLvxkRggYLEgYoYV-p3i2aOBPsZxergH89oXbAEsOsjV_UNsX6B7qmKgwORHp50nC7MmpK5tILTpA-zJ3cK5oU8MNpzmU4h-cLLqq9I-xyoNyb6jZZLCqxzN7InocgcRK5VU2akXbG1tPlgi8khcaQIRco9Vo918h0x5CqRATvRi89kooAVp8Unrp-DCgIvKewEhePDHF6GCuEsOsCAFlm03quHfoZgw39V9FsGXQpSpw"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(255,95,0,0.3)] group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-black" style="font-size: 32px; font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-white uppercase tracking-tight group-hover:text-primary transition-colors">Chasing PRs</h3>
+<p class="font-body-md text-label-sm text-on-surface-variant mt-1">Elite strength programming.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-[120px] px-margin-mobile md:px-margin-desktop text-center relative overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-background to-surface-container-lowest"></div>
+<!-- Abstract geometry for background -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border-[1px] border-outline-variant/10 rounded-full"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border-[1px] border-primary/10 rounded-full"></div>
+</div>
+<div class="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
+<h2 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-white uppercase text-shadow-strong mb-6 leading-none">YOUR TRANSFORMATION STARTS NOW</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">Stop reading about other people's success. It's time to build your own legacy. The bar is loaded.</p>
+<button class="bg-primary-container text-black font-label-bold text-body-lg uppercase px-12 py-5 shear-btn hover:scale-95 duration-200 ease-in-out transition-transform inline-flex items-center gap-2">
+                    JOIN THE ELITE
+                    <span class="material-symbols-outlined" style="font-size: 24px;">arrow_forward</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Shared Component: Footer -->
+<footer class="w-full bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20 relative z-10">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto gap-8">
+<div class="font-headline-md text-headline-md text-on-surface italic font-bold tracking-tighter">
+                IRONPULSE
+            </div>
+<div class="flex flex-wrap justify-center gap-6 font-label-bold text-label-bold uppercase">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Cookie Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Accessibility</a>
+</div>
+<div class="font-label-bold text-label-sm uppercase text-on-surface-variant text-center md:text-right">
+                © 2024 IRONPULSE PERFORMANCE. UNCOMPROMISING DISCIPLINE.
+            </div>
+</div>
+</footer>
+</body></html>
