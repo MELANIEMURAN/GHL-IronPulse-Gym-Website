@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IronPulse | Sector Alpha - NYC Location</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Hanken+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#313030",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "background": "#131313",
+                        "surface-container-high": "#2a2a2a",
+                        "error-container": "#93000a",
+                        "primary": "#ffb599",
+                        "inverse-primary": "#a63b00",
+                        "inverse-on-surface": "#303030",
+                        "secondary-container": "#4a4949",
+                        "tertiary": "#c6c6c7",
+                        "surface-container-low": "#1b1c1c",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-background": "#e4e2e1",
+                        "on-tertiary": "#2f3131",
+                        "on-error": "#690005",
+                        "outline-variant": "#5b4137",
+                        "on-surface-variant": "#e4bfb1",
+                        "primary-container": "#ff5f00",
+                        "on-secondary-container": "#bab8b7",
+                        "surface-dim": "#131313",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-primary-fixed": "#370e00",
+                        "primary-fixed": "#ffdbce",
+                        "surface-container-highest": "#353535",
+                        "surface-variant": "#353535",
+                        "on-surface": "#e4e2e1",
+                        "on-secondary-fixed-variant": "#474646",
+                        "on-primary-fixed-variant": "#7f2b00",
+                        "on-primary-container": "#531a00",
+                        "on-primary": "#5a1c00",
+                        "surface-bright": "#393939",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-error-container": "#ffdad6",
+                        "primary-fixed-dim": "#ffb599",
+                        "tertiary-container": "#939494",
+                        "secondary-fixed": "#e5e2e1",
+                        "secondary": "#c8c6c5",
+                        "surface-tint": "#ffb599",
+                        "inverse-surface": "#e4e2e1",
+                        "outline": "#ab8a7d",
+                        "on-tertiary-container": "#2b2d2d",
+                        "surface-container": "#1f2020",
+                        "surface": "#131313",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "error": "#ffb4ab"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "container-max": "1280px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Oswald"],
+                        "body-md": ["Hanken Grotesk"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-bold": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Oswald"],
+                        "headline-lg": ["Oswald"],
+                        "display-lg": ["Oswald"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-bold": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="text-headline-md font-headline-md font-black italic tracking-tighter text-primary dark:text-primary uppercase" href="#">IRONPULSE</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-background/80 hover:text-primary transition-colors duration-300 font-label-bold text-label-bold uppercase italic hover:scale-95 transition-transform duration-150" href="#">Programs</a>
+<a class="text-on-background/80 hover:text-primary transition-colors duration-300 font-label-bold text-label-bold uppercase italic hover:scale-95 transition-transform duration-150" href="#">Coaches</a>
+<a class="text-on-background/80 hover:text-primary transition-colors duration-300 font-label-bold text-label-bold uppercase italic hover:scale-95 transition-transform duration-150" href="#">Membership</a>
+<a class="text-on-background/80 hover:text-primary transition-colors duration-300 font-label-bold text-label-bold uppercase italic hover:scale-95 transition-transform duration-150" href="#">Testimonials</a>
+</div>
+<button class="hidden md:flex items-center justify-center bg-primary-container text-black font-label-bold text-label-bold uppercase px-6 py-3 hover:bg-primary transition-colors duration-300 transform -skew-x-12">
+<span class="skew-x-12">JOIN NOW</span>
+</button>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-on-background p-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[100px] pb-24">
+<!-- Hero Section -->
+<section class="relative w-full h-[614px] min-h-[500px] flex items-end pb-margin-desktop px-margin-mobile md:px-margin-desktop">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-black/60 z-10 mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent z-10"></div>
+<img alt="IronPulse Sector Alpha" class="w-full h-full object-cover object-center" data-alt="A gritty, high-contrast wide shot of an elite, dark industrial gym space located in a massive Brooklyn Navy Yard warehouse. Deep charcoal walls, exposed steel beams, and heavy iron equipment are illuminated by harsh, angular spotlights cutting through a subtle haze. The aesthetic is raw, powerful, and uncompromising, with glowing electric orange accents hinting at extreme intensity. The mood is highly motivational and aggressive, embodying a premium fitness environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7or51UKXTZCzTuvN-tW7nWVeSmFdRXlGn-xJ3vDWlpFYh8SrCfg72k-x_MaZzvkreLYrSoEQIIulSYPFaP2JK-eFNTstyXuZ-qrsM_UIG7gC3FMYJBEoMSwS952Qhz7280qCUj-bfI3YYZhapeCZdExQh8LYoDf1I-_GoADrwNAR4sqZDVtZDnj2T_waLT49SpyxtU2D4oc-mcLN-C1TQ3yw3klYIv5Ja19gqUFq7DQ7t7TiSEvzyNQ"/>
+</div>
+<!-- Content -->
+<div class="relative z-20 w-full max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-end gap-8">
+<div class="max-w-3xl">
+<div class="flex items-center gap-3 mb-4">
+<span class="px-3 py-1 bg-surface-container-high border border-outline/30 text-on-background font-label-bold text-label-bold uppercase tracking-wider">New York</span>
+<span class="px-3 py-1 bg-primary-container/20 text-primary border border-primary/30 font-label-bold text-label-bold uppercase tracking-wider">Flagship</span>
+</div>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg uppercase italic text-on-background mb-2">SECTOR ALPHA</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Brooklyn Navy Yard. 45,000 sq ft of pure, unadulterated training space engineered for elite performance. No distractions. Just iron.</p>
+</div>
+<div class="w-full md:w-auto flex flex-col sm:flex-row gap-4">
+<button class="bg-primary-container text-black font-label-bold text-label-bold uppercase px-8 py-4 hover:bg-primary transition-colors duration-300 transform -skew-x-12 flex-1 md:flex-none">
+<span class="skew-x-12">BOOK A TOUR</span>
+</button>
+<button class="border-2 border-on-background text-on-background font-label-bold text-label-bold uppercase px-8 py-4 hover:bg-surface-container-high transition-colors duration-300 transform -skew-x-12 flex-1 md:flex-none">
+<span class="skew-x-12">VIEW SCHEDULE</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Details Bento Grid -->
+<section class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter md:gap-8">
+<!-- Operating Hours (Span 4) -->
+<div class="md:col-span-4 bg-surface-container-low border border-surface-container-high p-8 flex flex-col group hover:border-outline/50 transition-colors duration-300">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-[28px]" style="font-variation-settings: 'FILL' 1;">schedule</span>
+<h3 class="font-headline-md text-headline-md uppercase italic text-on-background">Operational Protocol</h3>
+</div>
+<div class="space-y-4 flex-grow">
+<div class="flex justify-between items-center border-b border-surface-container-high pb-3">
+<span class="font-label-bold text-label-bold uppercase text-on-surface-variant">MON - FRI</span>
+<span class="font-body-md text-body-md text-on-background font-medium">04:00 - 23:00</span>
+</div>
+<div class="flex justify-between items-center border-b border-surface-container-high pb-3">
+<span class="font-label-bold text-label-bold uppercase text-on-surface-variant">SATURDAY</span>
+<span class="font-body-md text-body-md text-on-background font-medium">05:00 - 21:00</span>
+</div>
+<div class="flex justify-between items-center border-b border-surface-container-high pb-3">
+<span class="font-label-bold text-label-bold uppercase text-on-surface-variant">SUNDAY</span>
+<span class="font-body-md text-body-md text-primary font-medium">06:00 - 20:00</span>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-surface-container-high">
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">info</span>
+                            Holiday hours may vary. Check the app for updates.
+                        </p>
+</div>
+</div>
+<!-- Atmospheric Image (Span 8) -->
+<div class="md:col-span-8 bg-surface-container-low border border-surface-container-high relative overflow-hidden group min-h-[300px]">
+<div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-colors duration-500"></div>
+<div class="absolute inset-0 bg-cover bg-center z-0 scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" data-alt="A close-up, dramatic shot of a heavily knurled barbell resting on a squat rack inside the IronPulse gym. The lighting is low-key, with a strong rim light emphasizing the metallic texture and chalk dust on the bar. The background is a dark, out-of-focus expanse of the industrial warehouse setting, subtly lit by distant amber lights. The image conveys intense focus, raw power, and premium strength training equipment in a serious athletic environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA97D8CnMFr58RbT37lJxK4bdZI8h7jejpPUyuSvbBrAAqaIbpvNEU9ZSRR7OugCmQNM2cpCD4JuLpu1KmSVlLfNOhtEamaxRErXJILHiRNPWqm6yKHQ32Z-Ncv-6pbeiw_R6TG1yDSP5YO7IePBIKjkXLDl1F77JyeStcQMJOHh2CY3aPj6ucIy8dnuiKo1dy0Rab3gES9QyXsnt1Y74yTcZXfBdEEGucyIn0bHiSjRdhY8OgiBadWHA')"></div>
+<div class="absolute bottom-0 left-0 p-8 z-20 w-full bg-gradient-to-t from-background/90 to-transparent">
+<h3 class="font-headline-md text-headline-md uppercase italic text-on-background mb-1">The Forge</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Dedicated powerlifting platforms equipped with calibrated plates and elite-tier bars.</p>
+</div>
+</div>
+<!-- Tactical Specifications (Span 7) -->
+<div class="md:col-span-7 bg-surface-container-low border border-surface-container-high p-8">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-primary text-[28px]" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+<h3 class="font-headline-md text-headline-md uppercase italic text-on-background">Tactical Specifications</h3>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
+<!-- Spec Group 1 -->
+<div>
+<h4 class="font-label-bold text-label-bold uppercase text-on-surface-variant mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">hardware</span> Equipment
+                            </h4>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 border-l-2 border-primary pl-3">
+<span class="font-body-md text-body-md text-on-background">12 Power Racks</span>
+</li>
+<li class="flex items-start gap-3 border-l-2 border-transparent pl-3 hover:border-surface-container-high transition-colors">
+<span class="font-body-md text-body-md text-on-background">Competition Benches</span>
+</li>
+<li class="flex items-start gap-3 border-l-2 border-transparent pl-3 hover:border-surface-container-high transition-colors">
+<span class="font-body-md text-body-md text-on-background">Dumbbells up to 150lbs</span>
+</li>
+<li class="flex items-start gap-3 border-l-2 border-transparent pl-3 hover:border-surface-container-high transition-colors">
+<span class="font-body-md text-body-md text-on-background">Functional Turf Zone (40yd)</span>
+</li>
+</ul>
+</div>
+<!-- Spec Group 2 -->
+<div>
+<h4 class="font-label-bold text-label-bold uppercase text-on-surface-variant mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">spa</span> Recovery &amp; Amenities
+                            </h4>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 border-l-2 border-transparent pl-3 hover:border-surface-container-high transition-colors">
+<span class="font-body-md text-body-md text-on-background">Cold Plunge Tubs</span>
+</li>
+<li class="flex items-start gap-3 border-l-2 border-transparent pl-3 hover:border-surface-container-high transition-colors">
+<span class="font-body-md text-body-md text-on-background">Infrared Saunas</span>
+</li>
+<li class="flex items-start gap-3 border-l-2 border-transparent pl-3 hover:border-surface-container-high transition-colors">
+<span class="font-body-md text-body-md text-on-background">Premium Locker Rooms</span>
+</li>
+<li class="flex items-start gap-3 border-l-2 border-transparent pl-3 hover:border-surface-container-high transition-colors">
+<span class="font-body-md text-body-md text-on-background">Performance Shake Bar</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Map Location (Span 5) -->
+<div class="md:col-span-5 bg-surface-container-low border border-surface-container-high flex flex-col overflow-hidden relative group">
+<div class="p-6 pb-0 flex-shrink-0 z-20 bg-gradient-to-b from-surface-container-low to-surface-container-low/80">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary text-[28px]" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<h3 class="font-headline-md text-headline-md uppercase italic text-on-background">Coordinates</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Building 77, Brooklyn Navy Yard<br/>141 Flushing Ave, Brooklyn, NY 11205</p>
+</div>
+<!-- Map Embedded Image -->
+<div class="flex-grow min-h-[250px] relative mt-4 mx-2 mb-2 rounded border border-surface-container-high overflow-hidden">
+<img alt="Map to IronPulse Sector Alpha" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" data-alt="A dark-mode styled satellite map view of the Brooklyn Navy Yard area, centered on Building 77. The map colors are muted charcoals and deep blacks, with a glowing electric orange marker indicating the exact location of the IronPulse gym. Roads are subtle gray lines, and the nearby water is a dark, barely perceptible tone. The overall aesthetic is tactical and futuristic, aligning with the premium dark industrial brand identity." data-location="Brooklyn Navy Yard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmWD962FEPRW5Xn_Ve3XtO3SFgVymgq7qVGkJoxXLa10kY4znPsQ8J007X230gjhD8Ln6xMne6dd0sF7HEDhtP1PnfDaUWQMYmVS-k2zUWCkJYmRrIXbAPzSHwWX4eV2mcGXg8GEx9uw0YqCUEapTftAol43fJGynMJx_-M0iOhf4q6mzRNI90hkMPdgVplwlJh8a7qZZc4HOXgsNMpumq4W2d34OYBXMSzjUMJgs1vzZWBMnuXB6u6w"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay pointer-events-none"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-secondary-container">
+<div class="flex flex-col md:flex-row justify-between items-start w-full px-margin-desktop py-12 gap-8 max-w-container-max mx-auto">
+<div class="flex flex-col gap-4">
+<span class="text-headline-md font-headline-md font-black italic text-on-surface uppercase">IRONPULSE</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">Forging elite performance through discipline, intensity, and uncompromising standards.</p>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-bold text-label-bold uppercase opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-bold text-label-bold uppercase opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-bold text-label-bold uppercase opacity-80 hover:opacity-100" href="#">Contact Us</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-bold text-label-bold uppercase opacity-80 hover:opacity-100" href="#">Careers</a>
+</div>
+</div>
+<div class="w-full text-center py-6 border-t border-surface-container-highest/50">
+<span class="font-label-sm text-label-sm text-on-surface-variant">© 2024 IRONPULSE PERFORMANCE. ALL RIGHTS RESERVED.</span>
+</div>
+</footer>
+</body></html>
