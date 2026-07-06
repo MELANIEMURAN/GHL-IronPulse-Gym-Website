@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IronPulse | Evolve Your Limits</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Hanken+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline-variant": "#5b4137",
+                      "secondary-container": "#4a4949",
+                      "on-surface-variant": "#e4bfb1",
+                      "on-secondary-fixed-variant": "#474646",
+                      "on-tertiary-container": "#2b2d2d",
+                      "surface-container-highest": "#353535",
+                      "on-primary-fixed": "#370e00",
+                      "surface-bright": "#393939",
+                      "error": "#ffb4ab",
+                      "on-primary": "#5a1c00",
+                      "on-surface": "#e4e2e1",
+                      "primary-fixed": "#ffdbce",
+                      "tertiary-container": "#939494",
+                      "on-tertiary": "#2f3131",
+                      "on-error": "#690005",
+                      "on-background": "#e4e2e1",
+                      "primary-container": "#ff5f00",
+                      "inverse-primary": "#a63b00",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "on-primary-fixed-variant": "#7f2b00",
+                      "surface-container-low": "#1b1c1c",
+                      "tertiary-fixed": "#e2e2e2",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "surface-tint": "#ffb599",
+                      "inverse-surface": "#e4e2e1",
+                      "surface-variant": "#353535",
+                      "on-secondary-container": "#bab8b7",
+                      "surface": "#131313",
+                      "secondary": "#c8c6c5",
+                      "tertiary": "#c6c6c7",
+                      "on-secondary": "#313030",
+                      "primary": "#ffb599",
+                      "tertiary-fixed-dim": "#c6c6c7",
+                      "on-error-container": "#ffdad6",
+                      "primary-fixed-dim": "#ffb599",
+                      "on-tertiary-fixed-variant": "#454747",
+                      "inverse-on-surface": "#303030",
+                      "surface-container": "#1f2020",
+                      "background": "#131313",
+                      "surface-container-high": "#2a2a2a",
+                      "surface-container-lowest": "#0e0e0e",
+                      "error-container": "#93000a",
+                      "on-tertiary-fixed": "#1a1c1c",
+                      "surface-dim": "#131313",
+                      "outline": "#ab8a7d",
+                      "on-primary-container": "#531a00",
+                      "secondary-fixed": "#e5e2e1"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "16px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px",
+                      "container-max": "1280px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": [
+                              "Oswald"
+                      ],
+                      "label-bold": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-lg": [
+                              "Oswald"
+                      ],
+                      "headline-md": [
+                              "Oswald"
+                      ],
+                      "display-lg": [
+                              "Oswald"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "label-sm": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-bold": [
+                              "14px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "72px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .shear-btn {
+            clip-path: polygon(10px 0, 10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-black">
+<!-- TopNavBar (Shared Component) -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit max-w-container-max mx-auto bg-background dark:bg-background border-none">
+<div class="flex items-center gap-4">
+<img alt="IronPulse Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLsOp4b-bfJgz8iyE2--Z-H8pw_lD4JT74pJrOnGGYluznc-4PUo7ogoyjT1KrZZdm3pmLTxGjF1ic4ij4Pn0o_hd-SYkLAmSSWWNlR_amkoRzFUABo4PGSMnggpagPK7ay8MQ4quTI5wRwBWcvlFErZaVeNS3MvA6MBAivjATxXs5qfAsp7VJYkoCgevghgzFFGVa3u-ONeQV5wLjxSpl9LqYc6byr0MepjFBxZfoJIj9CNQFxiXg8VDaQ"/>
+<span class="font-headline-lg text-headline-lg font-black tracking-tighter text-primary dark:text-primary uppercase hidden sm:block">IRONPULSE</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant font-label-bold hover:text-primary transition-colors uppercase tracking-widest text-sm" href="#">Programs</a>
+<a class="text-on-surface-variant font-label-bold hover:text-primary transition-colors uppercase tracking-widest text-sm" href="#">Coaches</a>
+<a class="text-on-surface-variant font-label-bold hover:text-primary transition-colors uppercase tracking-widest text-sm" href="#">Membership</a>
+<a class="text-on-surface-variant font-label-bold hover:text-primary transition-colors uppercase tracking-widest text-sm" href="#">Testimonials</a>
+</nav>
+<button class="bg-primary-container text-black font-label-bold text-label-bold px-6 py-3 uppercase shear-btn hover:bg-white transition-colors duration-300">Join Now</button>
+</header>
+<main class="pt-[80px]">
+<!-- Hero Section -->
+<section class="relative w-full min-h-[90vh] flex items-center justify-center px-margin-mobile md:px-margin-desktop bg-surface-container-low overflow-hidden">
+<div class="absolute inset-0 w-full h-full bg-cover bg-center" data-alt="A cinematic, high-contrast image of an elite athlete pushing a heavy sled across a dark, industrial gym floor. The lighting is moody with bright, dramatic spotlights cutting through atmospheric haze, highlighting sweat and intense physical exertion. The color palette features deep blacks, charcoal grays, and striking electric orange accents reflecting the gym's aggressive, high-performance brand identity. Professional, gritty, and powerful aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAU32gdZU8c1qhlKnP2iz5fNtLrtRo9ChvHnSe-ei7wWMvG0w4hhbs-Rze9qKZwWYTj5cRG8hk8jfibNAG-23BGi99ux7z353B3rNR2SxYfs6baXjAJDsTwonCVWgN_TRc19XVIG4ocxmkdCJg8XBMorcXs7Sme_CFXDCcp6FCp-CYLNZaIarqy8LPkFEE-ypq3b0IWVTRIcEvHd3Q52ELzh0WhXXHhofBKGOQAoos4aicwxyTm9z62IA'); opacity: 0.6;"></div>
+<div class="relative z-10 max-w-container-max mx-auto text-center flex flex-col items-center">
+<h1 class="font-display-lg text-display-lg text-white uppercase mb-6 tracking-tighter drop-shadow-2xl">EVOLVE YOUR LIMITS</h1>
+<p class="font-body-lg text-body-lg text-gray-300 max-w-2xl mx-auto mb-10">State-of-the-art facility, elite coaching, and a community built for performance.</p>
+<button class="bg-primary-container text-black font-label-bold text-lg px-10 py-4 uppercase shear-btn hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(255,95,0,0.4)]">Claim Your Free Pass</button>
+</div>
+</section>
+<!-- Features Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-background max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Feature 1 -->
+<div class="bg-surface-container border border-surface-container-highest p-8 hover:border-primary-container transition-colors duration-300 flex flex-col items-start rounded-DEFAULT">
+<span class="material-symbols-outlined text-primary-container text-5xl mb-6" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+<h3 class="font-headline-md text-headline-md text-white uppercase mb-4">Elite Equipment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Access top-tier strength and conditioning gear designed for professional athletes. No compromises.</p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-container border border-surface-container-highest p-8 hover:border-primary-container transition-colors duration-300 flex flex-col items-start rounded-DEFAULT">
+<span class="material-symbols-outlined text-primary-container text-5xl mb-6" style="font-variation-settings: 'FILL' 1;">sports_kabaddi</span>
+<h3 class="font-headline-md text-headline-md text-white uppercase mb-4">Expert Coaching</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Train under the guidance of industry-leading performance specialists dedicated to your goals.</p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container border border-surface-container-highest p-8 hover:border-primary-container transition-colors duration-300 flex flex-col items-start rounded-DEFAULT">
+<span class="material-symbols-outlined text-primary-container text-5xl mb-6" style="font-variation-settings: 'FILL' 1;">schedule</span>
+<h3 class="font-headline-md text-headline-md text-white uppercase mb-4">24/7 Access</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Your schedule, your rules. Unrestricted access to the facility to grind whenever it counts.</p>
+</div>
+</div>
+</section>
+<!-- Programs Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low border-y border-surface-container-highest">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white uppercase text-center mb-16 tracking-tight">Signature Programs</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Program 1 -->
+<div class="group relative h-80 overflow-hidden rounded-DEFAULT">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A dynamic, high-intensity action shot of a fit athlete performing a explosive kettlebell swing in a dark, gritty gym environment. Bright, dramatic edge lighting outlines their physique against a charcoal background. The atmosphere is intense and focused, with subtle electric orange accents in the equipment to match the elite performance brand style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCuSJl1I9O1clpIziqhwQpZu_Y6X8JyfxBILxcelEFjlDUUE9BnpAHR5VcuCtIMBmeZ31Jiz8J7hD8WIxr5rsa22afEgmgVwiIbeUWm0xZHh5ERJpC9LfPYFpkvs8TfUWTE49iE9WvEdAsYOcYaj0VkP06ZwYhOzb5ycS4iArzFX9uDVwMP0rZYwU7XHVaOUpcGerXn_PUAJlYw_ss-lXZOaWvALriT8onlsYFo6FSEzwaRWv7_08a1gA')"></div>
+<div class="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<span class="inline-block bg-surface-container-highest text-white font-label-bold text-xs px-3 py-1 mb-2 uppercase rounded-sm">Cardio / Strength</span>
+<h3 class="font-headline-md text-headline-md text-white uppercase">HIIT Inferno</h3>
+</div>
+</div>
+<!-- Program 2 -->
+<div class="group relative h-80 overflow-hidden rounded-DEFAULT lg:col-span-2">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A powerful, wide-angle shot of a muscular weightlifter at the precise moment of catching a heavy barbell during a clean and jerk. The setting is a professional weightlifting platform in a cavernous, dark industrial gym space. Moody overhead lighting casts deep shadows, while striking orange neon strips in the background create a high-contrast, aggressive visual tone." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDDafXcPCAQEz3JwhLadrGAH-Ic4vQmdzZedwPB8FajEd0yMvMImUldWG0S3KOPYQ2JpYJL7xR922vayduNJVp-MoHtKg_f-IufmYXSl6z1w-Lv75j6PGKXddk_H7sldbr4sIbRJYwEUEfC-OlY8KH0zAElwR6AqbPNC_eqcdKHPJshmeasJ6TtGzuB7J7WjFu8hO-q-ov4FLJE7xvmrSs-mGvV3qIP1xhnznHOA1TSZmp7hoNpNfdJRg')"></div>
+<div class="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<span class="inline-block bg-surface-container-highest text-white font-label-bold text-xs px-3 py-1 mb-2 uppercase rounded-sm">Power / Technique</span>
+<h3 class="font-headline-md text-headline-md text-white uppercase">Olympic Lifting</h3>
+</div>
+</div>
+<!-- Program 3 -->
+<div class="group relative h-80 overflow-hidden rounded-DEFAULT lg:col-span-3">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A serene yet intense close-up of an athlete stretching deliberately on a dark mat, focusing on mobility and recovery. The scene is illuminated by soft, directional light that highlights muscle definition against deep charcoal shadows. The composition is clean and structural, conveying discipline and physical maintenance in a premium, dark-mode fitness setting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAtn9DmJaVW-GK1MQsnliPLO2-icHKrq9krPgrCfmCQipNhnGc6SBAQAqTRRxrfz_tzMf4UCrYzsh4n6ie77B6HVaHEd_rI8DeSCQXg_U4KxiJ44JP4XTUfPWTMuVzmF7UZNvrFmiiIGAG_gESe22EI_fmpz-4OFzVa4Y63LT92rA_3ZdXzIDXVwqu9Z9oiCG60bYitBl9O__pqYX1Yr6Ojj0GFHSS9ZlJO1V0ezVr_UkJcVINmuXE2gQ')"></div>
+<div class="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<span class="inline-block bg-surface-container-highest text-white font-label-bold text-xs px-3 py-1 mb-2 uppercase rounded-sm">Recovery</span>
+<h3 class="font-headline-md text-headline-md text-white uppercase">Mobility &amp; Flow</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-background max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white uppercase text-center mb-16 tracking-tight">Join The Ranks</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+<!-- Basic -->
+<div class="bg-surface-container border border-surface-container-highest p-8 rounded-DEFAULT">
+<h3 class="font-headline-md text-headline-md text-white uppercase mb-2">Base</h3>
+<div class="text-4xl font-display-lg text-white mb-6">$89<span class="text-body-md text-on-surface-variant font-normal">/mo</span></div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-3 text-on-surface text-body-md"><span class="material-symbols-outlined text-primary-container text-sm">check</span> 24/7 Open Gym Access</li>
+<li class="flex items-center gap-3 text-on-surface text-body-md"><span class="material-symbols-outlined text-primary-container text-sm">check</span> Locker Room &amp; Showers</li>
+<li class="flex items-center gap-3 text-surface-variant text-body-md"><span class="material-symbols-outlined text-sm">close</span> Group Classes</li>
+</ul>
+<button class="w-full border border-white text-white font-label-bold py-3 uppercase shear-btn hover:bg-white hover:text-black transition-colors duration-300">Select Base</button>
+</div>
+<!-- Pro (Highlighted) -->
+<div class="bg-surface-container-high border-2 border-primary-container p-10 rounded-DEFAULT relative transform md:scale-105 shadow-[0_0_30px_rgba(255,95,0,0.15)] z-10">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-container text-black font-label-bold text-xs px-4 py-1 uppercase tracking-widest rounded-sm">Most Popular</div>
+<h3 class="font-headline-md text-headline-md text-white uppercase mb-2 text-center">Elite</h3>
+<div class="text-5xl font-display-lg text-white mb-6 text-center text-primary-container">$149<span class="text-body-md text-on-surface-variant font-normal">/mo</span></div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-3 text-white text-body-md"><span class="material-symbols-outlined text-primary-container text-sm">check</span> 24/7 Open Gym Access</li>
+<li class="flex items-center gap-3 text-white text-body-md"><span class="material-symbols-outlined text-primary-container text-sm">check</span> Unlimited Group Classes</li>
+<li class="flex items-center gap-3 text-white text-body-md"><span class="material-symbols-outlined text-primary-container text-sm">check</span> 1 PT Session / Month</li>
+<li class="flex items-center gap-3 text-white text-body-md"><span class="material-symbols-outlined text-primary-container text-sm">check</span> Recovery Zone Access</li>
+</ul>
+<button class="w-full bg-primary-container text-black font-label-bold py-4 uppercase shear-btn hover:bg-white transition-colors duration-300">Join Elite</button>
+</div>
+<!-- Ultimate -->
+<div class="bg-surface-container border border-surface-container-highest p-8 rounded-DEFAULT">
+<h3 class="font-headline-md text-headline-md text-white uppercase mb-2">Ultimate</h3>
+<div class="text-4xl font-display-lg text-white mb-6">$299<span class="text-body-md text-on-surface-variant font-normal">/mo</span></div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-3 text-on-surface text-body-md"><span class="material-symbols-outlined text-primary-container text-sm">check</span> Everything in Elite</li>
+<li class="flex items-center gap-3 text-on-surface text-body-md"><span class="material-symbols-outlined text-primary-container text-sm">check</span> Weekly 1-on-1 Coaching</li>
+<li class="flex items-center gap-3 text-on-surface text-body-md"><span class="material-symbols-outlined text-primary-container text-sm">check</span> Custom Nutrition Plan</li>
+</ul>
+<button class="w-full border border-white text-white font-label-bold py-3 uppercase shear-btn hover:bg-white hover:text-black transition-colors duration-300">Select Ultimate</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-start gap-gutter bg-surface-container-lowest dark:bg-surface-container-lowest text-primary dark:text-primary font-body-md border-t border-surface-container-highest mt-12">
+<div class="flex flex-col gap-4">
+<span class="font-headline-md text-headline-md font-black text-primary tracking-tighter uppercase">IRONPULSE</span>
+<p class="text-on-surface-variant text-sm max-w-sm">Built for those who refuse to settle. Join the elite.</p>
+</div>
+<div class="flex flex-col gap-4">
+<nav class="flex flex-col md:flex-row gap-6">
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-colors duration-200 uppercase tracking-wider" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-colors duration-200 uppercase tracking-wider" href="#">Terms of Service</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-colors duration-200 uppercase tracking-wider" href="#">Contact Us</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-colors duration-200 uppercase tracking-wider" href="#">Careers</a>
+</nav>
+<div class="text-on-surface-variant font-label-sm text-label-sm mt-4 md:mt-0">
+                © 2024 IRONPULSE PERFORMANCE SYSTEMS. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>
