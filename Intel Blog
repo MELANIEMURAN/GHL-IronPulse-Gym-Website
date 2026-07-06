@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IronPulse 'Intel' Blog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Hanken+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary": "#313030",
+                      "on-tertiary-fixed": "#1a1c1c",
+                      "background": "#131313",
+                      "surface-container-high": "#2a2a2a",
+                      "error-container": "#93000a",
+                      "primary": "#ffb599",
+                      "inverse-primary": "#a63b00",
+                      "inverse-on-surface": "#303030",
+                      "secondary-container": "#4a4949",
+                      "tertiary": "#c6c6c7",
+                      "surface-container-low": "#1b1c1c",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "on-background": "#e4e2e1",
+                      "on-tertiary": "#2f3131",
+                      "on-error": "#690005",
+                      "outline-variant": "#5b4137",
+                      "on-surface-variant": "#e4bfb1",
+                      "primary-container": "#ff5f00",
+                      "on-secondary-container": "#bab8b7",
+                      "surface-dim": "#131313",
+                      "on-tertiary-fixed-variant": "#454747",
+                      "on-primary-fixed": "#370e00",
+                      "primary-fixed": "#ffdbce",
+                      "surface-container-highest": "#353535",
+                      "surface-variant": "#353535",
+                      "on-surface": "#e4e2e1",
+                      "on-secondary-fixed-variant": "#474646",
+                      "on-primary-fixed-variant": "#7f2b00",
+                      "on-primary-container": "#531a00",
+                      "on-primary": "#5a1c00",
+                      "surface-bright": "#393939",
+                      "tertiary-fixed": "#e2e2e2",
+                      "on-error-container": "#ffdad6",
+                      "primary-fixed-dim": "#ffb599",
+                      "tertiary-container": "#939494",
+                      "secondary-fixed": "#e5e2e1",
+                      "secondary": "#c8c6c5",
+                      "surface-tint": "#ffb599",
+                      "inverse-surface": "#e4e2e1",
+                      "outline": "#ab8a7d",
+                      "on-tertiary-container": "#2b2d2d",
+                      "surface-container": "#1f2020",
+                      "surface": "#131313",
+                      "tertiary-fixed-dim": "#c6c6c7",
+                      "surface-container-lowest": "#0e0e0e",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "error": "#ffb4ab"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px",
+                      "unit": "8px",
+                      "container-max": "1280px",
+                      "gutter": "16px"
+              },
+              "fontFamily": {
+                      "headline-md": ["Oswald"],
+                      "body-md": ["Hanken Grotesk"],
+                      "label-sm": ["Hanken Grotesk"],
+                      "body-lg": ["Hanken Grotesk"],
+                      "label-bold": ["Hanken Grotesk"],
+                      "headline-lg-mobile": ["Oswald"],
+                      "headline-lg": ["Oswald"],
+                      "display-lg": ["Oswald"]
+              },
+              "fontSize": {
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                      "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "500"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-bold": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                      "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                      "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .clip-slant { clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%); }
+        .clip-slant-reverse { clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%); }
+        .gradient-overlay { background: linear-gradient(to top, #131313 0%, rgba(19, 19, 19, 0) 100%); }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="bg-background/95 backdrop-blur-md fixed top-0 w-full z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="text-headline-md font-headline-md font-black italic tracking-tighter text-primary dark:text-primary" href="#">IRONPULSE</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-bold text-label-bold uppercase italic text-on-background/80 hover:text-on-background transition-colors duration-300" href="#">Programs</a>
+<a class="font-label-bold text-label-bold uppercase italic text-on-background/80 hover:text-on-background transition-colors duration-300" href="#">Coaches</a>
+<a class="font-label-bold text-label-bold uppercase italic text-on-background/80 hover:text-on-background transition-colors duration-300" href="#">Membership</a>
+<a class="font-label-bold text-label-bold uppercase italic text-primary border-b-2 border-primary pb-1" href="#">Intel</a>
+</div>
+<button class="font-label-bold text-label-bold uppercase bg-primary-container text-black px-6 py-3 clip-slant hover:bg-primary transition-colors duration-300 hidden md:block">JOIN NOW</button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-[100px] pb-24">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Page Header -->
+<header class="mb-16 md:mb-24 text-center md:text-left mt-8 md:mt-16">
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg uppercase italic text-on-background mb-4">Intel Command</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl border-l-4 border-primary pl-4">Raw data, elite tactics, and frontline reports from the IronPulse proving grounds. Dominate your discipline.</p>
+</header>
+<!-- Hero Post: Methodology -->
+<article class="relative w-full h-[500px] md:h-[700px] mb-24 group cursor-pointer overflow-hidden border border-surface-container-highest">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A gritty, high-contrast photograph of an elite athlete in a dark, industrial gym setting, mid-lift with heavy kettlebells. Dramatic lighting emphasizes sweat and muscle definition. Electric orange ambient light streaks across the background, creating a high-octane, intense mood fitting for a premium fitness brand." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBR04ihGHLSwBzip-7J01c0aWQKn0Nto0HL8_cZe1LYv-HGdwcKruBAha0L7ugE2flwmKv-Qy0iuOAB7Zox1XBGlMAl7J9-WdqM5oOeE5E4ROMlUGLBTF1K7lVHyr9-MqTNQF11u8RQo2mXmLP1fiEeWv-5rEe4At-v78f-cgJofsBxUubss-bFuM0lH26CMu_X_-E1KpcC6c7XQmr76zLoqBHUcPNKh1-3SMA3Jv0DPd9eMDEYKrkNOA')"></div>
+<div class="absolute inset-0 bg-black/60 gradient-overlay"></div>
+<div class="absolute bottom-0 left-0 p-8 md:p-16 w-full md:w-3/4">
+<span class="inline-block bg-surface-container-high text-white font-label-bold text-label-bold px-4 py-2 uppercase mb-4 border border-surface-container-highest">Core Doctrine</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase italic text-white mb-6 leading-tight">Methodology: The IronPulse Standard</h2>
+<p class="font-body-lg text-body-lg text-on-background/90 mb-8 hidden md:block max-w-xl">We don't do 'easy'. We don't do 'maintenance'. Dive into the brutal math and biomechanical science behind our elite conditioning protocols.</p>
+<button class="font-label-bold text-label-bold uppercase bg-primary-container text-black px-8 py-4 clip-slant hover:bg-primary transition-all duration-300 flex items-center gap-2">
+                        READ SITREP <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter md:gap-8">
+<!-- Bento Grid Left Column (Spans 8) -->
+<div class="md:col-span-8 flex flex-col gap-gutter md:gap-8">
+<!-- Nutrition Feature -->
+<article class="relative h-[400px] group overflow-hidden border border-surface-container-highest flex">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Close up of a premium, high-protein meal prep container on a dark slate surface. Features grilled steak, dark leafy greens, and roasted sweet potatoes. Stark, directional lighting creates deep shadows, emphasizing a disciplined, elite nutrition aesthetic with a subtle orange glow in the background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_d50j4cOfGYMiSkNdWCSwD7vPYfmac9goFEXl7rzh_WixHsytbxB0xWo6GNU01Enj5CLIy0PysKEahq6c7WPpm4z9x3S7t7koeDVJcvjzedpWDQ0IVbdINewriqUM49uGGxN7xf1tP2-CyZ3ej5iUNelfW7GoReWK56HGc-lMaMizDRLDoRSImV9OrXar-nCqAasg8RcKpAOEpvpvFvEsqU3YlXSZVL3B3TdjfVgj3XPQMnAdh-o6hw')"></div>
+<div class="absolute inset-0 bg-black/40 md:hidden"></div>
+</div>
+<div class="absolute inset-0 md:relative md:w-1/2 p-6 md:p-8 flex flex-col justify-end md:justify-center bg-gradient-to-t from-black/90 via-black/50 to-transparent md:bg-surface-container-low">
+<span class="inline-block bg-surface-container-high text-primary font-label-bold text-label-bold px-3 py-1 uppercase mb-4 self-start border border-outline-variant">Fuel Logistics</span>
+<h3 class="font-headline-md text-headline-md uppercase italic text-white mb-3">Hypertrophy Fuel: Macros for the Frontline</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 hidden md:block">Precision nutrition strategies to maximize muscle protein synthesis after a Zone 5 kinetic assault.</p>
+<a class="font-label-bold text-label-bold text-primary uppercase flex items-center gap-1 hover:text-primary-container transition-colors" href="#">
+                                READ SITREP <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</article>
+<!-- Two small cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter md:gap-8">
+<article class="bg-surface-container-low border border-surface-container-highest p-6 flex flex-col justify-between min-h-[300px] group hover:border-primary-container transition-colors duration-300">
+<div>
+<span class="text-secondary font-label-sm text-label-sm uppercase tracking-wider mb-2 block">Brand News</span>
+<h4 class="font-headline-md text-[20px] leading-tight uppercase italic text-on-background mb-4">IronPulse Tactical Gear Drop 04</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">New heavy-duty rucksacks and compression wear engineered for extreme durability.</p>
+</div>
+<div class="mt-6 flex justify-between items-center border-t border-surface-container-highest pt-4">
+<span class="font-label-sm text-label-sm text-on-surface-variant">02 OCT 2024</span>
+<button class="w-10 h-10 rounded-full border border-primary text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-black transition-all">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<article class="bg-surface-container-low border border-surface-container-highest p-6 flex flex-col justify-between min-h-[300px] group hover:border-primary-container transition-colors duration-300 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center opacity-20" data-alt="Abstract, blurred background of a heavy iron barbell loaded with plates. Dark monochrome tones with a severe, gritty texture." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCsrkLKcZaiGPMo75E6dGRr1MjsVbutkhlm19h1SziymfVP0AmqBM_pMt3O8JcjY0FyLS5awy_F_JCLRrOmsZ0tr09hPHrXjrLRAe26UcrBzdIgKC2YdFCeiz4aDlCyEr4EoDVe7PxD0iix7ASCqi7IblKfHle2yuqT7MI1Oge3L0s2R0DUNg-fthGAp4mwFtcGe1MQ7m7baCBalTZyxrem9vNdd_b8vx2OEM40ks5kKt_e8TUPp0eVvQ')"></div>
+<div class="relative z-10">
+<span class="text-secondary font-label-sm text-label-sm uppercase tracking-wider mb-2 block">Training Tactics</span>
+<h4 class="font-headline-md text-[20px] leading-tight uppercase italic text-on-background mb-4">Mastering the Deadlift: Kinetic Chain Isolation</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Stop pulling with your ego. Start pulling with biomechanical supremacy.</p>
+</div>
+<div class="relative z-10 mt-6 flex justify-between items-center border-t border-surface-container-highest pt-4">
+<span class="font-label-sm text-label-sm text-on-surface-variant">28 SEP 2024</span>
+<button class="w-10 h-10 rounded-full border border-primary text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-black transition-all">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</article>
+</div>
+</div>
+<!-- Right Sidebar (Spans 4) -->
+<aside class="md:col-span-4 flex flex-col gap-gutter md:gap-8">
+<!-- Popular Posts List -->
+<div class="bg-surface-container border border-surface-container-highest p-6 md:p-8">
+<h3 class="font-headline-md text-headline-md uppercase italic text-on-background mb-6 border-b border-surface-container-highest pb-4">High Priority Comms</h3>
+<div class="flex flex-col">
+<!-- List Item 1 (Active) -->
+<a class="group py-4 border-b border-surface-container-highest last:border-0 relative pl-4" href="#">
+<div class="absolute left-0 top-0 bottom-0 w-[2px] bg-primary-container"></div>
+<span class="font-label-sm text-label-sm text-primary mb-1 block">RECOVERY</span>
+<h4 class="font-headline-md text-[18px] leading-snug uppercase text-on-background group-hover:text-primary transition-colors">Active Rest Protocols for Central Nervous System Fatigue</h4>
+</a>
+<!-- List Item 2 -->
+<a class="group py-4 border-b border-surface-container-highest last:border-0 hover:bg-surface-container-high transition-colors -mx-4 px-4" href="#">
+<span class="font-label-sm text-label-sm text-secondary mb-1 block">MINDSET</span>
+<h4 class="font-headline-md text-[18px] leading-snug uppercase text-on-background group-hover:text-primary transition-colors">Embracing the Grind: Psychological Resilience</h4>
+</a>
+<!-- List Item 3 -->
+<a class="group py-4 border-b border-surface-container-highest last:border-0 hover:bg-surface-container-high transition-colors -mx-4 px-4" href="#">
+<span class="font-label-sm text-label-sm text-secondary mb-1 block">EQUIPMENT</span>
+<h4 class="font-headline-md text-[18px] leading-snug uppercase text-on-background group-hover:text-primary transition-colors">Kettlebell vs Dumbbell: Tactical Deployment</h4>
+</a>
+</div>
+</div>
+<!-- Newsletter CTA -->
+<div class="bg-primary text-black p-8 relative overflow-hidden clip-slant-reverse mt-auto">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-[32px] mb-4">mail</span>
+<h3 class="font-headline-md text-[24px] uppercase italic font-black mb-2">Secure Comms Line</h3>
+<p class="font-body-md text-[14px] mb-6 font-medium">Enlist for weekly intel drops. No spam, only tactical advantages.</p>
+<form class="flex flex-col gap-3">
+<input class="bg-black/10 border-b-2 border-black placeholder:text-black/60 text-black font-label-bold px-0 py-2 focus:ring-0 focus:border-black outline-none w-full uppercase" placeholder="ENTER EMAIL ADDRESS" type="email"/>
+<button class="bg-black text-primary font-label-bold uppercase py-3 mt-2 hover:bg-surface-container-highest transition-colors" type="submit">SUBSCRIBE</button>
+</form>
+</div>
+</div>
+</aside>
+</div>
+<!-- Load More Action -->
+<div class="mt-16 text-center border-t border-surface-container-highest pt-16">
+<button class="font-label-bold text-label-bold uppercase border-2 border-on-background text-on-background px-8 py-3 hover:bg-on-background hover:text-background transition-colors duration-300">
+                    ACCESS ARCHIVES
+                </button>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-secondary-container w-full">
+<div class="flex flex-col md:flex-row justify-between items-start w-full px-margin-mobile md:px-margin-desktop py-12 gap-8 max-w-container-max mx-auto">
+<div class="flex flex-col gap-4">
+<a class="text-headline-md font-headline-md font-black italic text-on-surface" href="#">IRONPULSE</a>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">Elite training protocols for the uncompromising athlete.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-6 md:gap-12">
+<a class="font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary transition-colors duration-200 opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary transition-colors duration-200 opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary transition-colors duration-200 opacity-80 hover:opacity-100" href="#">Contact Us</a>
+<a class="font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary transition-colors duration-200 opacity-80 hover:opacity-100" href="#">Careers</a>
+</div>
+<div class="mt-4 md:mt-0 font-label-bold text-label-bold text-on-surface-variant text-sm">
+                © 2024 IRONPULSE PERFORMANCE. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>
