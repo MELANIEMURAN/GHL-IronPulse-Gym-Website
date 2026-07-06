@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Join Now - IRONPULSE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;family=Oswald:wght@200..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#474646",
+                        "on-primary-fixed-variant": "#7f2b00",
+                        "surface-container-low": "#1b1c1c",
+                        "on-primary": "#5a1c00",
+                        "tertiary": "#c6c6c7",
+                        "on-primary-fixed": "#370e00",
+                        "surface-container-highest": "#353535",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "error": "#ffb4ab",
+                        "surface-bright": "#393939",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "secondary-container": "#4a4949",
+                        "outline": "#ab8a7d",
+                        "error-container": "#93000a",
+                        "on-secondary-container": "#bab8b7",
+                        "secondary": "#c8c6c5",
+                        "on-secondary": "#313030",
+                        "tertiary-fixed": "#e2e2e2",
+                        "surface-tint": "#ffb599",
+                        "on-tertiary-container": "#2b2d2d",
+                        "primary-fixed-dim": "#ffb599",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-surface": "#e4e2e1",
+                        "primary-fixed": "#ffdbce",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-error-container": "#ffdad6",
+                        "on-error": "#690005",
+                        "inverse-primary": "#a63b00",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-dim": "#131313",
+                        "surface-variant": "#353535",
+                        "on-background": "#e4e2e1",
+                        "primary-container": "#ff5f00",
+                        "outline-variant": "#5b4137",
+                        "primary": "#ffb599",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "tertiary-container": "#939494",
+                        "on-primary-container": "#531a00",
+                        "surface": "#131313",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "inverse-on-surface": "#303030",
+                        "surface-container": "#1f2020",
+                        "on-surface-variant": "#e4bfb1",
+                        "background": "#131313",
+                        "on-tertiary": "#2f3131",
+                        "inverse-surface": "#e4e2e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Oswald"],
+                        "body-md": ["Hanken Grotesk"],
+                        "display-lg": ["Oswald"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "label-bold": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Oswald"],
+                        "headline-lg": ["Oswald"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "fontWeight": "500" }],
+                        "label-bold": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        
+        .clip-slant {
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+        }
+        
+        .input-focus-glow:focus-within {
+            box-shadow: 0 0 15px rgba(255, 95, 0, 0.2);
+            border-color: theme('colors.primary-container');
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-black font-body-md text-body-md">
+<!-- TopNavBar -->
+<nav class="bg-background/95 dark:bg-background/95 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/30">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<a class="font-display-lg text-headline-md font-bold tracking-tighter text-primary dark:text-primary uppercase" href="#">
+                IRONPULSE
+            </a>
+<div class="hidden md:flex gap-8">
+<a class="text-on-surface dark:text-on-surface hover:text-primary transition-colors font-label-bold text-label-bold uppercase flex items-center h-full pt-1" href="#">Programs</a>
+<a class="text-on-surface dark:text-on-surface hover:text-primary transition-colors font-label-bold text-label-bold uppercase flex items-center h-full pt-1" href="#">Coaches</a>
+<a class="text-on-surface dark:text-on-surface hover:text-primary transition-colors font-label-bold text-label-bold uppercase flex items-center h-full pt-1" href="#">Membership</a>
+<a class="text-on-surface dark:text-on-surface hover:text-primary transition-colors font-label-bold text-label-bold uppercase flex items-center h-full pt-1" href="#">Testimonials</a>
+</div>
+<div class="hidden md:block">
+<button class="bg-primary-container text-black font-headline-md text-headline-md italic px-8 py-3 clip-slant hover:scale-95 transition-transform duration-150 uppercase tracking-wide">
+                    JOIN NOW
+                </button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-20 flex flex-col md:flex-row min-h-screen">
+<!-- Left Column: Visual/Hero -->
+<section class="w-full md:w-1/2 relative flex flex-col justify-center px-margin-mobile md:px-margin-desktop py-20 overflow-hidden min-h-[512px] md:min-h-0 border-b md:border-b-0 md:border-r border-outline-variant/30">
+<!-- Background Image -->
+<div class="absolute inset-0 w-full h-full z-0 opacity-40 mix-blend-luminosity" data-alt="Intense, gritty cinematic shot of a high-end industrial gym environment. Dark shadows contrast with harsh, focused spotlights illuminating heavy iron weights and matte black equipment. Atmospheric chalk dust floats in the air. The aesthetic is raw, powerful, and uncompromising, perfectly aligned with an elite fitness brand's dark-mode identity." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBT1353cJhr4PDLiSgJoajgtDm5c4L6AZjxj8hchjkvlp1mrhDSEt7FpbN2-L1IprH3jcRB2fDCixoURdgQc8QJ0O1tHZho42RmKa23BF7c_wwb-VQoMb4U9kaOKeWs3NIQ02Q4Ii54iH9WM6s7hT8Z0lgr1cFNdJnaeE63PYlkk909Lsc8hsCX27vqCIFDfMhezY8GMwbgj8s_0fL8hnOCk4gEzEJz8YVxqfEUUtLxFxHjKBMoXO4R_w')"></div>
+<!-- Content -->
+<div class="relative z-10 max-w-lg">
+<div class="inline-flex items-center gap-2 mb-6 border border-primary/30 bg-surface-container-highest/80 px-4 py-1">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-bold text-label-bold text-primary tracking-widest uppercase">Elite Access</span>
+</div>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg uppercase mb-6 drop-shadow-lg text-white">
+                    Commence Your <span class="text-primary-container">Evolution</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md border-l-2 border-primary-container pl-4">
+                    Complete your profile to unlock elite-level training and recovery. This is not for the faint of heart. Welcome to the proving ground.
+                </p>
+<div class="mt-12 flex gap-4 opacity-70">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">fitness_center</span>
+<span class="material-symbols-outlined text-4xl">bolt</span>
+<span class="material-symbols-outlined text-4xl" data-weight="fill">local_fire_department</span>
+</div>
+</div>
+</section>
+<!-- Right Column: Registration Form -->
+<section class="w-full md:w-1/2 bg-surface-container-lowest flex items-center justify-center px-margin-mobile md:px-margin-desktop py-20 relative">
+<div class="w-full max-w-md">
+<div class="mb-12 flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md uppercase tracking-wider text-white">Registration</h2>
+<span class="font-label-bold text-label-bold text-primary-container">Step 1 of 1</span>
+</div>
+<form class="space-y-8">
+<!-- Personal Info -->
+<div class="space-y-6 border-b border-outline-variant/30 pb-8">
+<!-- Full Name -->
+<div class="group">
+<label class="block font-label-bold text-label-bold text-tertiary mb-2 uppercase tracking-wide group-focus-within:text-primary transition-colors" for="fullName">Full Name</label>
+<div class="relative input-focus-glow transition-all duration-300 border border-surface-variant bg-surface-container-low rounded-none">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">person</span>
+<input class="w-full bg-transparent border-none text-white pl-12 pr-4 py-4 focus:ring-0 placeholder-surface-variant font-body-md" id="fullName" placeholder="JOHN DOE" required="" type="text"/>
+</div>
+</div>
+<!-- Email -->
+<div class="group">
+<label class="block font-label-bold text-label-bold text-tertiary mb-2 uppercase tracking-wide group-focus-within:text-primary transition-colors" for="email">Email Address</label>
+<div class="relative input-focus-glow transition-all duration-300 border border-surface-variant bg-surface-container-low rounded-none">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">mail</span>
+<input class="w-full bg-transparent border-none text-white pl-12 pr-4 py-4 focus:ring-0 placeholder-surface-variant font-body-md" id="email" placeholder="ATHLETE@EXAMPLE.COM" required="" type="email"/>
+</div>
+</div>
+<!-- Phone -->
+<div class="group">
+<label class="block font-label-bold text-label-bold text-tertiary mb-2 uppercase tracking-wide group-focus-within:text-primary transition-colors" for="phone">Phone Number</label>
+<div class="relative input-focus-glow transition-all duration-300 border border-surface-variant bg-surface-container-low rounded-none">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">phone_iphone</span>
+<input class="w-full bg-transparent border-none text-white pl-12 pr-4 py-4 focus:ring-0 placeholder-surface-variant font-body-md" id="phone" placeholder="(555) 000-0000" required="" type="tel"/>
+</div>
+</div>
+</div>
+<!-- Membership Tier Selection -->
+<div class="pt-4 space-y-4">
+<label class="block font-label-bold text-label-bold text-white mb-4 uppercase tracking-wide">Select Tier</label>
+<div class="grid gap-4">
+<!-- Base Tier -->
+<label class="relative cursor-pointer">
+<input class="peer sr-only" name="tier" type="radio" value="base"/>
+<div class="w-full p-6 bg-surface-container border border-surface-variant hover:border-primary/50 peer-checked:border-primary-container peer-checked:bg-surface-container-high transition-all duration-200 group">
+<div class="flex justify-between items-center mb-2">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface peer-checked:text-white">Base</h3>
+<span class="font-label-bold text-label-bold text-on-surface-variant">$99/mo</span>
+</div>
+<p class="font-body-md text-sm text-tertiary">Essential facility access and standard equipment.</p>
+<div class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 peer-checked:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary-container">check_circle</span>
+</div>
+</div>
+</label>
+<!-- Elite Tier -->
+<label class="relative cursor-pointer">
+<input checked="" class="peer sr-only" name="tier" type="radio" value="elite"/>
+<div class="w-full p-6 bg-surface-container border-2 border-primary-container bg-surface-container-high transition-all duration-200 relative overflow-hidden">
+<!-- Glow accent -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/10 blur-2xl rounded-full translate-x-1/2 -translate-y-1/2"></div>
+<div class="flex justify-between items-center mb-2 relative z-10">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-md text-headline-md uppercase text-white">Elite</h3>
+<span class="bg-primary-container text-black text-[10px] font-bold px-2 py-0.5 uppercase tracking-wider">Popular</span>
+</div>
+<span class="font-label-bold text-label-bold text-primary">$149/mo</span>
+</div>
+<p class="font-body-md text-sm text-on-surface-variant relative z-10">Full access, recovery zone, and group programming.</p>
+<div class="absolute right-4 top-1/2 -translate-y-1/2 transition-opacity z-10">
+<span class="material-symbols-outlined text-primary-container">check_circle</span>
+</div>
+</div>
+</label>
+<!-- Ultimate Tier -->
+<label class="relative cursor-pointer">
+<input class="peer sr-only" name="tier" type="radio" value="ultimate"/>
+<div class="w-full p-6 bg-surface-container border border-surface-variant hover:border-primary/50 peer-checked:border-primary-container peer-checked:bg-surface-container-high transition-all duration-200">
+<div class="flex justify-between items-center mb-2">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface">Ultimate</h3>
+<span class="font-label-bold text-label-bold text-on-surface-variant">$249/mo</span>
+</div>
+<p class="font-body-md text-sm text-tertiary">1-on-1 coaching, personalized nutrition, all access.</p>
+<div class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 peer-checked:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary-container">check_circle</span>
+</div>
+</div>
+</label>
+</div>
+</div>
+<!-- Terms -->
+<div class="flex items-start gap-3 mt-8">
+<input class="mt-1 w-5 h-5 bg-surface-container border-surface-variant text-primary-container focus:ring-primary-container focus:ring-offset-background rounded-none" id="terms" type="checkbox"/>
+<label class="font-body-md text-sm text-on-surface-variant leading-tight" for="terms">
+                            I acknowledge that I am prepared to put in the work. I agree to the <a class="text-primary hover:underline" href="#">Terms of Service</a> and <a class="text-primary hover:underline" href="#">Privacy Policy</a>.
+                        </label>
+</div>
+<!-- Submit -->
+<button class="w-full bg-primary-container text-black font-headline-md text-headline-md italic py-5 mt-8 clip-slant hover:bg-primary transition-colors uppercase tracking-widest shadow-[0_0_20px_rgba(255,95,0,0.3)] hover:shadow-[0_0_30px_rgba(255,95,0,0.5)] flex items-center justify-center gap-2" type="submit">
+<span>Start Training</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<p class="text-center font-label-sm text-tertiary mt-4 uppercase tracking-wider">Secure Registration via IronPulse Secure</p>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest w-full py-12 border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop max-w-container-max mx-auto gap-gutter">
+<div class="font-display-lg text-headline-md text-primary dark:text-primary uppercase tracking-tighter">
+                IRONPULSE
+            </div>
+<div class="flex flex-wrap justify-center gap-6 my-6 md:my-0">
+<a class="font-label-bold text-label-bold text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors underline focus:outline-none focus:ring-2 focus:ring-primary uppercase" href="#">Privacy Policy</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors underline focus:outline-none focus:ring-2 focus:ring-primary uppercase" href="#">Terms of Service</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors underline focus:outline-none focus:ring-2 focus:ring-primary uppercase" href="#">Contact Us</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors underline focus:outline-none focus:ring-2 focus:ring-primary uppercase" href="#">Careers</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors underline focus:outline-none focus:ring-2 focus:ring-primary uppercase" href="#">Affiliates</a>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant">
+                © 2024 IRONPULSE ELITE FITNESS. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>
