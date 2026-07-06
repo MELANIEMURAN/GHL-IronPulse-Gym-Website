@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - IronPulse</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&amp;family=Oswald:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#ffb599",
+                        "primary-fixed": "#ffdbce",
+                        "surface": "#131313",
+                        "on-secondary": "#313030",
+                        "surface-container-high": "#2a2a2a",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-secondary-fixed-variant": "#474646",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "tertiary": "#c6c6c7",
+                        "surface-container": "#1f2020",
+                        "secondary-fixed": "#e5e2e1",
+                        "tertiary-container": "#939494",
+                        "outline": "#ab8a7d",
+                        "secondary": "#c8c6c5",
+                        "on-tertiary-container": "#2b2d2d",
+                        "on-surface-variant": "#e4bfb1",
+                        "error-container": "#93000a",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-tertiary": "#2f3131",
+                        "on-secondary-container": "#bab8b7",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "surface-container-highest": "#353535",
+                        "background": "#131313",
+                        "surface-container-low": "#1b1c1c",
+                        "secondary-container": "#4a4949",
+                        "primary": "#ffb599",
+                        "error": "#ffb4ab",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "surface-variant": "#353535",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-primary": "#5a1c00",
+                        "inverse-primary": "#a63b00",
+                        "inverse-on-surface": "#303030",
+                        "on-background": "#e4e2e1",
+                        "surface-bright": "#393939",
+                        "primary-container": "#ff5f00",
+                        "on-error-container": "#ffdad6",
+                        "inverse-surface": "#e4e2e1",
+                        "on-primary-container": "#531a00",
+                        "outline-variant": "#5b4137",
+                        "tertiary-fixed": "#e2e2e2",
+                        "surface-dim": "#131313",
+                        "on-primary-fixed": "#370e00",
+                        "on-error": "#690005",
+                        "surface-tint": "#ffb599",
+                        "on-primary-fixed-variant": "#7f2b00",
+                        "on-surface": "#e4e2e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "16px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Oswald"],
+                        "body-md": ["Hanken Grotesk"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "headline-md": ["Oswald"],
+                        "headline-lg": ["Oswald"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-bold": ["Hanken Grotesk"],
+                        "display-lg": ["Oswald"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-bold": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .clip-slant {
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+        }
+        .clip-slant-reverse {
+            clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        .bg-grid-pattern {
+            background-image: linear-gradient(to right, #2a2a2a 1px, transparent 1px),
+                              linear-gradient(to bottom, #2a2a2a 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden pt-24 selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed w-full top-0 z-50 bg-background/95 dark:bg-background/95 backdrop-blur-sm border-b border-outline-variant/30 transition-all duration-300" id="top-nav">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-display-lg text-headline-md md:text-headline-lg font-bold text-primary italic dark:text-primary tracking-tighter" href="#">
+                IRONPULSE
+            </a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-on-background font-medium hover:text-primary transition-colors hover:scale-95 duration-200 ease-in-out font-headline-md text-headline-md uppercase tracking-tighter text-sm" href="#">Programs</a>
+<a class="text-on-background font-medium hover:text-primary transition-colors hover:scale-95 duration-200 ease-in-out font-headline-md text-headline-md uppercase tracking-tighter text-sm" href="#">Coaches</a>
+<a class="text-on-background font-medium hover:text-primary transition-colors hover:scale-95 duration-200 ease-in-out font-headline-md text-headline-md uppercase tracking-tighter text-sm" href="#">Membership</a>
+<a class="text-on-background font-medium hover:text-primary transition-colors hover:scale-95 duration-200 ease-in-out font-headline-md text-headline-md uppercase tracking-tighter text-sm" href="#">Testimonials</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:block clip-slant bg-primary-container text-black font-label-bold uppercase px-6 py-3 hover:bg-primary transition-colors">
+                    JOIN NOW
+                </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative w-full h-[614px] md:h-[716px] flex items-end pb-margin-desktop bg-surface-container-lowest border-b border-outline-variant/20 overflow-hidden">
+<div class="absolute inset-0 w-full h-full">
+<div class="absolute inset-0 bg-cover bg-center opacity-40" data-alt="A dramatic, high-contrast wide shot of an elite, dimly lit industrial gym space. The environment features heavy black iron equipment, dramatic volumetric lighting piercing through dusty air, and subtle glowing orange LED accents along the concrete walls. The mood is intense, focused, and professional, perfectly suited for a high-performance training facility." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_b0WQJzos3yjrCP7Vio9-dTeCxtDssn-oro-K96U6uxHJIEPxAk4AYIyuxd6RnPVnB-f_8bI4HH7NtL-0jF8dHW3V15VdwiI0D_HKnSxp3756lXo62rP7OkrZNN778DacnEqm0AkeZ3LxOgyoDDCyxz5UdiUFiN2cwgiAdBhYteG58rRrpQ9Cpf88oo4QWhGD7tgJc47mKKf76wIO1jyxoUbhkA90UgWAdjCdtuDVzsC2dfEUEYZSfA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+<div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+</div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6">
+<div class="max-w-3xl">
+<span class="inline-block px-3 py-1 bg-surface-container-high text-primary font-label-bold uppercase tracking-widest mb-4 border border-outline-variant/30">Support &amp; Inquiries</span>
+<h1 class="font-display-lg text-display-lg md:text-[96px] text-on-surface uppercase tracking-tighter leading-none">
+                            CONTACT <br/><span class="text-primary italic">COMMAND CENTER</span>
+</h1>
+</div>
+<div class="hidden md:block text-right mb-4">
+<p class="font-body-lg text-on-surface-variant max-w-sm">
+                            Direct line to headquarters. Drop your coordinates or send a sitrep. We respond with force.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content Area -->
+<section class="w-full px-margin-mobile md:px-margin-desktop py-24 max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+<!-- Left Column: Contact Details -->
+<div class="lg:col-span-5 space-y-12">
+<div class="space-y-4">
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tighter text-on-surface">Intel &amp;<br/>Coordinates</h2>
+<p class="font-body-lg text-on-surface-variant">
+                            Deploy communications to our support operatives. Expect a tactical response within 24 hours.
+                        </p>
+</div>
+<div class="space-y-8">
+<!-- Detail Card 1 -->
+<div class="group flex items-start gap-6 p-6 bg-surface-container-low border border-outline-variant/20 hover:border-primary/50 transition-colors duration-300">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container-high flex items-center justify-center border border-outline-variant/30 group-hover:bg-primary-container group-hover:text-black transition-all">
+<span class="material-symbols-outlined text-primary group-hover:text-black">location_on</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mb-2">Elite HQ</h3>
+<p class="font-body-md text-on-surface-variant">
+                                    742 Evergreen Terrace<br/>
+                                    Industrial Sector 7G<br/>
+                                    Springfield, SP 12345
+                                </p>
+</div>
+</div>
+<!-- Detail Card 2 -->
+<div class="group flex items-start gap-6 p-6 bg-surface-container-low border border-outline-variant/20 hover:border-primary/50 transition-colors duration-300">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container-high flex items-center justify-center border border-outline-variant/30 group-hover:bg-primary-container group-hover:text-black transition-all">
+<span class="material-symbols-outlined text-primary group-hover:text-black">call</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mb-2">Comms Line</h3>
+<p class="font-body-md text-on-surface-variant">
+                                    +1 (555) 019-8372<br/>
+<span class="text-sm opacity-70">Mon-Fri: 0500 - 2200 EST</span>
+</p>
+</div>
+</div>
+<!-- Detail Card 3 -->
+<div class="group flex items-start gap-6 p-6 bg-surface-container-low border border-outline-variant/20 hover:border-primary/50 transition-colors duration-300">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container-high flex items-center justify-center border border-outline-variant/30 group-hover:bg-primary-container group-hover:text-black transition-all">
+<span class="material-symbols-outlined text-primary group-hover:text-black">mail</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mb-2">Digital Drops</h3>
+<p class="font-body-md text-on-surface-variant">
+                                    support@ironpulse.io<br/>
+                                    press@ironpulse.io
+                                </p>
+</div>
+</div>
+</div>
+<!-- Social Links -->
+<div class="pt-8 border-t border-outline-variant/20 flex gap-4">
+<a class="w-10 h-10 bg-surface-container-high flex items-center justify-center border border-outline-variant/30 hover:border-primary text-on-surface hover:text-primary transition-all" href="#">
+<span class="font-headline-md text-sm">IG</span>
+</a>
+<a class="w-10 h-10 bg-surface-container-high flex items-center justify-center border border-outline-variant/30 hover:border-primary text-on-surface hover:text-primary transition-all" href="#">
+<span class="font-headline-md text-sm">X</span>
+</a>
+<a class="w-10 h-10 bg-surface-container-high flex items-center justify-center border border-outline-variant/30 hover:border-primary text-on-surface hover:text-primary transition-all" href="#">
+<span class="font-headline-md text-sm">YT</span>
+</a>
+</div>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container p-8 md:p-12 border border-outline-variant/20 shadow-2xl relative overflow-hidden">
+<!-- Decorative top accent -->
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-container to-inverse-primary"></div>
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tighter text-on-surface mb-8">Transmit <span class="text-primary">Message</span></h2>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest block">Operative Name</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/30 text-on-surface font-body-md px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors placeholder:text-on-surface-variant/30" placeholder="JOHN DOE" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest block">Email Address</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/30 text-on-surface font-body-md px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors placeholder:text-on-surface-variant/30" placeholder="JDOE@EXAMPLE.COM" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest block">Subject Protocol</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant/30 text-on-surface font-body-md px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors appearance-none">
+<option value="membership">Membership Inquiry</option>
+<option value="training">Personal Training Setup</option>
+<option value="support">Technical Support</option>
+<option value="other">Other Transmission</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-widest block">Transmission Data</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant/30 text-on-surface font-body-md px-4 py-3 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors resize-none placeholder:text-on-surface-variant/30" placeholder="ENTER MESSAGE DETAILS HERE..." rows="6"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full clip-slant bg-primary-container text-black font-label-bold text-lg uppercase px-8 py-5 hover:bg-primary transition-colors flex items-center justify-center gap-2 group" type="button">
+                                    SEND MESSAGE
+                                    <span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">send</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Locations / Map Section -->
+<section class="w-full py-24 bg-surface border-t border-outline-variant/20 relative">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-12 flex justify-between items-end">
+<h2 class="font-display-lg text-display-lg md:text-[72px] text-on-surface uppercase tracking-tighter leading-none">
+                    OUR <span class="text-primary italic">LOCATIONS</span>
+</h2>
+<div class="hidden md:flex gap-2">
+<button class="w-12 h-12 bg-surface-container flex items-center justify-center border border-outline-variant/30 hover:border-primary text-on-surface hover:text-primary transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 bg-surface-container flex items-center justify-center border border-outline-variant/30 hover:border-primary text-on-surface hover:text-primary transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop w-full overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-container-max mx-auto">
+<!-- Map Card 1 -->
+<div class="bg-surface-container-high border border-outline-variant/30 group">
+<div class="h-48 w-full bg-surface-container-lowest overflow-hidden relative">
+<!-- Placeholder for map image -->
+<div class="w-full h-full bg-cover bg-center opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="A stylized, dark-mode satellite map view of an urban industrial area, showing glowing orange routes and a sharp, high-tech map marker pinpointing a specific warehouse location." data-location="New York" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8LgWK7ygcd50DW43vUx0_qcevuU_1uBLHcLtK6CcYKigy_G_oGAq50osZsx327OumhABujGG6yzsmHZ7PMprr4vxQPkQRS55HqsJ9lIwIT_y_mKvV1s-WE43tWN8HyZvMfIQik5Ld32zKV1d6vv5cGL-bOiV9oCqpy_n4fA-kjRPw5AZaf1hl2PcQGRo32nuhVDjZXlJuynS8DYLsRY2TGJWq63PORkDIHnNpVlE6KaRjjE9Ee83pNA')"></div>
+<div class="absolute inset-0 border border-primary/20 m-2 pointer-events-none"></div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mb-1">NYC Sector Alpha</h3>
+<p class="font-body-md text-on-surface-variant mb-4 text-sm">Brooklyn Navy Yard, NY</p>
+<a class="inline-flex items-center gap-1 font-label-bold text-primary hover:text-primary-fixed transition-colors uppercase text-xs tracking-widest" href="#">
+                                Get Directions <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Map Card 2 -->
+<div class="bg-surface-container-high border border-outline-variant/30 group">
+<div class="h-48 w-full bg-surface-container-lowest overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="A stylized, dark-mode satellite map view of an urban industrial area in Los Angeles, showing glowing orange routes and a sharp, high-tech map marker pinpointing a specific warehouse location." data-location="Los Angeles" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBmoobwysIM5PkMayBVEZuZxn9zXzQPLDP4GcmbMByOJgtlOCTebIU-nMFEt7qj813Ji2LbDDyqA88F0T0yVirOynjXkrEqBWqAtdGWG2YGTq4QwXZZda87m9CqzO5SUl1wS7vyKzCXImVRmHLijQw_uQkyTn0Zs1x8_1EAoqG2UTW1BCWZwHuoqGncl40eZ32Y66Ja9IImR27DHDuDtcOS7ytt1w1xbPJbSLZP41A--UDyVoAsfqHHqg')"></div>
+<div class="absolute inset-0 border border-primary/20 m-2 pointer-events-none"></div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mb-1">LA Sector Bravo</h3>
+<p class="font-body-md text-on-surface-variant mb-4 text-sm">Arts District, CA</p>
+<a class="inline-flex items-center gap-1 font-label-bold text-primary hover:text-primary-fixed transition-colors uppercase text-xs tracking-widest" href="#">
+                                Get Directions <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Map Card 3 -->
+<div class="bg-surface-container-high border border-outline-variant/30 group">
+<div class="h-48 w-full bg-surface-container-lowest overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="A stylized, dark-mode satellite map view of an urban industrial area in Chicago, showing glowing orange routes and a sharp, high-tech map marker pinpointing a specific warehouse location." data-location="Chicago" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4JiaCa4lnRMsbHVpZria8cWLwJpqUis2vRj79PDkwje-4Y08yXWFFYegd_rTbQ1RzP0icpdXhvuj1js4OCfQ0ymSEj53R8Pd-Wiy8m8YfLwAfD2yFmDq5YmvNHcbKlrhqBWnXtQGzscJYKljeXPD7g7qyXnegBcDus39ppH5MbcaSj6nh3f5Jjb78BIvn2HGCe2zNGAM2wat90C-lwizzwiRpL8uXP1-luMnZ3_SN64NukQrxj4BDVA')"></div>
+<div class="absolute inset-0 border border-primary/20 m-2 pointer-events-none"></div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface mb-1">CHI Sector Charlie</h3>
+<p class="font-body-md text-on-surface-variant mb-4 text-sm">West Loop, IL</p>
+<a class="inline-flex items-center gap-1 font-label-bold text-primary hover:text-primary-fixed transition-colors uppercase text-xs tracking-widest" href="#">
+                                Get Directions <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto gap-8 md:gap-0">
+<div class="font-headline-md text-headline-md text-on-surface font-bold italic tracking-tighter">
+                IRONPULSE
+            </div>
+<div class="flex flex-wrap justify-center gap-6 md:gap-8 font-label-bold text-label-bold uppercase">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Cookie Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Accessibility</a>
+</div>
+<div class="text-on-surface-variant font-label-sm text-xs md:text-sm uppercase tracking-widest text-center md:text-right">
+                © 2024 IRONPULSE PERFORMANCE. UNCOMPROMISING DISCIPLINE.
+            </div>
+</div>
+</footer>
+<script>
+        // Simple script for nav background opacity on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('top-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg', 'border-primary/20');
+                nav.classList.remove('border-outline-variant/30');
+            } else {
+                nav.classList.remove('shadow-lg', 'border-primary/20');
+                nav.classList.add('border-outline-variant/30');
+            }
+        });
+    </script>
+</body></html>
